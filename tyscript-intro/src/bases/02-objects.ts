@@ -19,5 +19,13 @@ export const charmander: Pokemon = {
     name: 'charmander'
 }
 
-console.log(bulbasaur);
-console.log(pokemonIds);
+// console.log(bulbasaur);
+// console.log(pokemonIds);
+
+
+// Pokemon es un arreglo de pokemons que lucira la interfaz de pokemon
+export const pokemons: Pokemon[] = [];
+pokemons.push(charmander, bulbasaur);
+
+console.log(pokemons);
+
