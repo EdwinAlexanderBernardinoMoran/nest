@@ -1,3 +1,4 @@
+import { bulbasaur, pokemonIds } from './bases/02-objects';
 import './style.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
@@ -17,8 +18,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <button id="counter" type="button"></button>
     </div>
     <p class="read-the-docs">
-      Hello ${name} I am ${age} years old
+      Hello ${name} I am ${age} years old ${pokemonIds.join(',')}
     </p>
+    <p>Hello ${bulbasaur.name}</p>
   </div>
 `
 
