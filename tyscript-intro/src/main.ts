@@ -4,6 +4,7 @@ import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.ts'
 import { name, age } from './bases/01-types.ts'
+import { charmander } from './bases/03-classes.ts';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -20,6 +21,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <p class="read-the-docs">
       Hello ${name} I am ${age} years old ${pokemonIds.join(',')}
     </p>
+    <p>Hello ${charmander.name}</p>
   </div>
 `
 
