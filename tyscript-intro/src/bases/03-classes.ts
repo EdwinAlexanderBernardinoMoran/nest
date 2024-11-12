@@ -12,9 +12,23 @@ export class Pokemon {
 
     // Forma 2
 
+    get imageUrl(): string{
+        return `https://pokemon.com/${ this.id }`;
+    }
+
     constructor(
-        public id: number, public name: string
+        public id: number,
+        public name: string,
     ) {}
+
+    public scream() {
+        console.log(`${this.name.toUpperCase()} !!!`);
+    }
+
+    public speak() {
+        console.log(`${this.name}, ${this.name}`);
+        
+    }
 
 }
 
@@ -22,3 +36,11 @@ export const charmander = new Pokemon(1, 'Charmander')
 
 // La clase permite crear instancias de la misma
 // La interfaz solo anade reglas y condiciones
+// Los metodos publicos los puedo utilizar donde quiera
+// Los metodo privados solo los puedo utilizar dentro de la clase
+
+console.log(charmander);
+
+charmander.scream()
+charmander.speak()
+
