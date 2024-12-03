@@ -1,3 +1,4 @@
+import axios from 'axios';
 export class Pokemon {
 
     // Forma 1
@@ -27,7 +28,12 @@ export class Pokemon {
 
     public speak() {
         console.log(`${this.name}, ${this.name}`);
-        
+    }
+
+    async getMoves() {
+        const { data } = await axios.get('https://pokeapi.co/api/v2/pokemon/4');
+
+        console.log(data.moves);
     }
 
 }
@@ -39,8 +45,8 @@ export const charmander = new Pokemon(1, 'Charmander')
 // Los metodos publicos los puedo utilizar donde quiera
 // Los metodo privados solo los puedo utilizar dentro de la clase
 
-console.log(charmander);
+console.log(charmander.getMoves());
 
-charmander.scream()
-charmander.speak()
+// charmander.scream()
+// charmander.speak()
 
