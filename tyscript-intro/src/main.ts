@@ -6,7 +6,8 @@ import { setupCounter } from './counter.ts'
 // import { name, age } from './bases/01-types.ts'
 // import { charmander } from './bases/03-classes.ts';
 // import { charmander } from './bases/04-injection.ts';
-import { charmander } from './bases/05-decorators.ts';
+// import { charmander } from './bases/05-decorators.ts';
+import { charmander } from './bases/06-decorator-2.ts';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
