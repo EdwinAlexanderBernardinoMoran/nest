@@ -1,0 +1,12 @@
+// Metodo Asincrono
+
+Es un metodo que lleva la palabra reservada ( async ) y se ejecuta a distiempo y regresa una promesa.
+
+// Principios Solid
+
+Estan fuertemente relacionados con la Programacion Orientado a Objetos, en otras palabras son clases por todos lados.
+
+// Decoradores
+
+- Son simples funciones, existen decoradores de clases, metodos, etc,
+- Un decorador de clase tiene beneficios como, acceso a la definicion de la clase, puede expandir funcionalidades, bloquear funcionalidades, remover funcionalidades o sobreescribir la clase.
